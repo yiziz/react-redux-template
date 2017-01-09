@@ -1,0 +1,20 @@
+
+@import './variables/colors';
+
+.account {
+  background-color: $white;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.header {
+  height: 60px;
+
+  .name {
+    float: left;
+  }
+
+  .sendAt {
+    float: right;
+  }
+}

@@ -1,0 +1,26 @@
+.duck {
+  display: block;
+  width: 120px;
+  margin: 1.5rem auto;
+}
+
+.filePath {
+  background: blue;
+  display: inline-block;
+  height: 200px;
+  margin-right: 300px;
+  width: 200px;
+}
+
+.slackDemo {
+  background: red;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+}
+
+.Integrations {
+  > div {
+    margin: 50px;
+  }
+}

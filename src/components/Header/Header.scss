@@ -1,0 +1,11 @@
+
+@import './variables/colors';
+
+.activeRoute {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.header {
+  border-bottom: 1px solid $gray3;
+}

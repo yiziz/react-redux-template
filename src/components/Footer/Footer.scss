@@ -1,0 +1,20 @@
+
+@import './variables/colors';
+
+.footer {
+  color: $gray2;
+
+  a {
+    color: $gray2;
+    margin-right: 10px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+:global {
+  @import 'base';
+  @import '~normalize.css/normalize';
+
+  // Some best-practice CSS that's useful for most apps
+  // Just remove them if they're not what you want
+  html {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    background-color: $gray4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    outline: none;
+  }
+
+  .container {
+    @include outer-container;
+  }
+
+  button {
+    background-color: transparent;
+    border: 1px solid $gray3;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 20px;
+
+    &.clear-btn {
+      border: 0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .modal {
+    max-width: 100%;
+
+    > div {
+      border-radius: 3px;
+    }
+  }
+}

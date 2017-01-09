@@ -1,0 +1,84 @@
+
+@import 'bourbon';
+@import 'neat';
+@import './variables/colors';
+@import './variables/media';
+@import './variables/numbers';
+
+.background {
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.banner {
+  // background: linear-gradient($gray3, $white);
+  // background: linear-gradient($gray4, $gray3);
+  background-color: $gray3;
+  height: $banner-height;
+}
+
+.content {
+  padding-top: 100px;
+  position: relative;
+  z-index: 10;
+}
+
+.digest {
+  background-color: $white;
+  border: 1px solid $gray3;
+  box-shadow: 0 3px 5px -2px $gray3;
+  color: $gray1;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: $tablet;
+
+  .actions {
+    text-align: center;
+  }
+
+  .text {
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.digestBanner {
+  .actions {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .title {
+    background-color: transparent;
+    // color: $white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 40px 20px;
+    text-align: center;
+  }
+}
+
+.footer {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  width: $tablet;
+}
+
+.loggedOutHome {
+  position: relative;
+}
+
+.section {
+  border-top: 1px solid $gray4;
+  padding: 40px;
+  padding-bottom: 60px;
+}

@@ -1,0 +1,36 @@
+
+@import './variables/colors';
+@import './variables/numbers';
+
+.brand {
+  display: inline-block;
+}
+
+.menu {
+  display: inline-block;
+  float: right;
+
+  a {
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 15px;
+    text-decoration: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.navbar {
+  background-color: $white;
+  height: $navbar-height;
+
+  &.landing {
+    background-color: $gray3;
+  }
+}
+
+.navbarContent {
+  padding-top: 20px;
+}
